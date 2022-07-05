@@ -18,11 +18,47 @@
 } 
 
 header { 
-  background: #333; 
+  background: #ff69b4; 
   color: #FFF; 
-  
+  position: relative;
   padding: 20px; 
 } 
+.navButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index:500;
+}
+
+.navButton .material-symbols-rounded {
+  color: #FFF;
+  font-size: 2rem;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(64,64,64,.7);
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+.menu li {
+  height: 3rem;
+  border-bottom: solid 1px #AAA;
+}
+
+.menu a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.menu a:hover {
+  background-color: #222;
+}
+
 .main-menu ul { 
   display: flex; 
 } 
@@ -60,7 +96,7 @@ section {
 article { 
   background: #FFF; 
   padding: 20px; 
-  
+  text-align:center;
   margin-bottom: 20px;   
 } 
 
@@ -109,7 +145,11 @@ img {
 .imglist li {
   flex-basis:33%;
 }
-
+.luv img{
+width:80%;
+margin:auto;
+  display: block;
+}
 /*タブレット用*/ 
 @media all and (max-width: 1024px) { 
   
@@ -137,7 +177,10 @@ main {
 .sub-menu ul li { 
   text-align: center; 
 } 
-
+.luv img{
+  width:100%;
+  
+}
 } 
 @media all and (min-width: 600px) { 
   
